@@ -1,0 +1,78 @@
+
+
+h4 {
+    margin: 0;
+    position: absolute;
+    margin-top: 36px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.cont{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    display: block;
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.cont li{
+    display: inline-block;
+}
+
+.cont li a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.cool_link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.cool_link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.signup{
+    top: 15px;
+    right: 35px;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(61, 61, 92,0.8), rgba(61, 61, 92,0.8)), radial-gradient(circle at top left, #e67300, #804000, #e67300, #804000, #804000);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+     font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+.signup span{
+    display: block;
+    padding: 5px 20px;
+}
+
+.logo{
+    width: 60px;
+    float: right;
+    margin-top: -10px;
+    padding-left: -102px;
+    transform: translateX(-187%) translateY(2%);
+}
